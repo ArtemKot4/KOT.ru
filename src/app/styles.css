@@ -1,0 +1,71 @@
+.background {
+  background-image: url(./background.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(15px);
+  position: absolute;
+  top: 132;
+  left: auto;
+  right: 12.5%;
+  width: 75%;
+  height: 350%;
+  z-index: -1;
+} 
+
+.name {
+  font-size: 3rem;
+  color: #333;
+  letter-spacing: 0.1rem;
+  transform: scale(1.2);
+} 
+
+.faq {
+  font-size: 1.2rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transform: scale(1.2);
+  border-bottom: 1px solid rgb(112, 92, 92);
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  width: 13%;
+  margin: 1rem auto;
+} 
+
+.not-found {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  width: 33.33%;
+  background-color: rgb(200, 200, 200);
+}
+
+.right-side {
+  width: 66.67%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-404 {
+  margin-left: 45%;
+  padding-top: 10px;
+  font-size: 3rem;
+  color: #333;
+  letter-spacing: 0.1rem;
+  transform: scale(1.2);
+}
+
+.page-not-found {
+  font-size: 1.2rem;
+  color: #333;
+  letter-spacing: 0.1rem;
+  transform: scale(1.2);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -200vh;
+}
