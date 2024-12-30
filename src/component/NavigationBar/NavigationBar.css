@@ -1,0 +1,11 @@
+.border {
+    background-color: rgb(226, 235, 253);
+    height: 70px;
+}
+
+.name {
+    font-size: 2.2rem;
+    color: #333;
+    letter-spacing: 0.05rem;
+} 
+  

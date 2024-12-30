@@ -2,11 +2,16 @@
 
 import './styles.css';
 import TranslurentBorder from '@->/component/TranslurentBorder';
+import NavigationBar from '@->/component/NavigationBar/NavigationBar';
 
 export default function StartPage() {
 
   return (
+    <>
+    <NavigationBar />
     <div className="container mx-auto p-4 text-center" style={{ position: 'relative' }}>
+      
+
     <div className='background'></div>
     <h1 className='name' translate="no">KOT<span style={{fontSize: '1.2rem'}}>.ru</span></h1>
     <div style={{borderBottom: '5px solid black', width: '80%', margin: '1rem auto'}}></div>
@@ -18,6 +23,7 @@ export default function StartPage() {
       </TranslurentBorder>
       
     </div>
+    </>
   );
 };
 
