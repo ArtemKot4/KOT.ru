@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KOT.ru alpha",
+  title: "KOT alpha",
   description: "Best social site for code developers",
 };
 

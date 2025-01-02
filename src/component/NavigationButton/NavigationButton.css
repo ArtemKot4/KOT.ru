@@ -1,14 +1,19 @@
 .navigation-button {
     margin-left: 50px;
-    border-radius: 5px;
-    background-color: #9fd2fc;
-    color: #666666;
-    padding: 10px 40px;
+    margin-top: -3px;
+    color: #808080;
+    padding: 8px 20px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.25s ease;
+    transition: background-color 0.3s ease;
 }
   
 .navigation-button:hover {
-    background-color: #6faff7;
+    border-radius: 5px;
+    background-color: #cecece;
+    color: #7e7e7e
+}
+
+.navigation-button:active {
+    background-color: #81d1ff;
 }

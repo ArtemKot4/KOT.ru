@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react';
-import './NavigationButton.css'
+import { useRouter } from 'next/navigation';
+import './NavigationButton.css';
 
 interface INavigationButtonProps {
   children: React.ReactNode;
@@ -7,10 +10,15 @@ interface INavigationButtonProps {
   [key: string]: any;
 }
 
-export default function NavigationButton({children, link, ...props }: INavigationButtonProps) {
+export default function NavigationButton({ children, link, ...props }: INavigationButtonProps) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(link);
+  };
+
   return (
-    <button {...props}>
-      <a href={link}></a>
+    <button {...props} onClick={handleClick}>
       <h1 className='navigation-button'>{children}</h1>
     </button>
   );

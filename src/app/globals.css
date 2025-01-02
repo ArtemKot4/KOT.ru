@@ -19,17 +19,3 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.backgroundStyle {
-  background-image: url(https://giga.chat/gigachat/files/public/generated/d1314555-f1f7-4099-baff-3320148d303b);
-  background-size: 'cover';
-  background-position: 'center';
-  filter: 'blur(15px)';
-  position: 'absolute';
-  top: 132;
-  left: 'auto';
-  right: '12.5%';
-  width: '75%';
-  height: '350%';
-  z-index: -1;
-}

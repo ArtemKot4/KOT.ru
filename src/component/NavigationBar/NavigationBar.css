@@ -1,6 +1,7 @@
 .border {
-    background-color: rgb(226, 235, 253);
-    height: 70px;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    border-bottom: .5px solid rgb(255, 218, 218);
 }
 
 .name {

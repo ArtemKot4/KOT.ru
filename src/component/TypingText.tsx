@@ -4,9 +4,10 @@ interface ITypingTextProps extends HTMLAttributes<HTMLDivElement> {
     children?: string;
     speed?: number;
     rebuildAgain?: boolean;
+    endChar?: string;
 };
 
-export default function TypingText({children, speed = 100, rebuildAgain, ...props}: ITypingTextProps) {
+export default function TypingText({children, speed = 100, rebuildAgain, endChar = "|", ...props}: ITypingTextProps) {
     if(children === undefined) return <h1> children is undefined </h1>;
 
     const [typedText, setTypedText] = useState("");
@@ -39,6 +40,6 @@ export default function TypingText({children, speed = 100, rebuildAgain, ...prop
         };
     }, [isDone, typedText, children, speed]);
 
-    return <h1 {...props}> {typedText.length != children.length && typedText.length > 0 ? typedText + "|" : typedText} </h1>;
+    return <h1 {...props}> {typedText.length != children.length && typedText.length > 0 ? typedText + endChar : typedText} </h1>;
 
 }
