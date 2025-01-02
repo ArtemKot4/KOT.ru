@@ -31,6 +31,15 @@
     background-color: rgb(255, 255, 255);
 }
 
-.form {
-    display: block;
+.form-border {
+    width: 40%;
+    border: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: -250px
+}
+
+.form-border::placeholder {
+    padding-left: 10px;
 }

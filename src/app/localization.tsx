@@ -31,6 +31,16 @@ export const localization = {
         optionalRequest: {
             ru: "Кажется, вы не авторизованы. Желаете войти?",
             en: "I guess, you has not authorized. You wish to log in?"
+        },
+        placeholder: {
+            login: {
+                en: "I am Kot",
+                ru: "Я - kot"
+            },
+            password: {
+                en: "My password:",
+                ru: "Мой пароль:"
+            }
         }
     }
 } as Record<string, any>
@@ -41,7 +51,8 @@ export default function getLocalize(path: string, lang: string = "ru") {
     const keys = path.split("/");
     let link = localization;
     for (const key of keys) {
-      link = link[key];
+      if(link[key]) link = link[key]
+      else return path;
     }
     return link[lang];
   }
