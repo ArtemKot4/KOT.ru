@@ -1,14 +1,18 @@
 .authorization-padding {
     margin: 5rem auto;
-    width: 50%;
+    width: 40%;
     border: 3px solid rgb(204, 204, 204);
     border-radius: 5px;
-    background-color: white;
+    background: linear-gradient(to right, #ffffff, #fafafa);
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
+
 .request-h1 {
-    margin-top: 10px;
-    margin-bottom: -10px;
+    margin-top: -20px;
     font-size: 1.5rem;
     color: rgb(78, 78, 78)
 }
@@ -32,14 +36,22 @@
 }
 
 .form-border {
-    width: 40%;
-    border: solid;
+    width: 70%;
+    border: 3px solid rgb(133, 133, 133);
+    padding: 10px;
     border-width: 3px;
     border-radius: 5px;
     margin-bottom: 20px;
-    margin-left: -250px
+    
 }
 
 .form-border::placeholder {
-    padding-left: 10px;
+    padding-left: 5px;
+}
+
+.input-name {
+    padding-right: 310px;
+    align-items:flex-start;
+    font-size: 1.2rem;
+    color:#707070;
 }

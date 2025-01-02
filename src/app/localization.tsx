@@ -21,8 +21,12 @@ export const localization = {
             en: "Authorization"
         },
         login: {
-            ru: "Войти",
+            ru: "Логин",
             en: "Login"
+        },
+        password: {
+            ru: "Пароль",
+            en: "Password"
         },
         register: {
             ru: "Регистрация",
@@ -42,6 +46,10 @@ export const localization = {
                 ru: "Мой пароль:"
             }
         }
+    },
+    send: {
+        ru: "Отправить",
+        en: "Send"
     }
 } as Record<string, any>
 

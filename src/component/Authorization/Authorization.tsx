@@ -3,7 +3,6 @@ import Form from 'next/form'
 import getLocalize from '@->/app/localization';
 import './Authorization.css';
 import TypingText from '../TypingText';
-import Image from "next/image"
 
 interface IAuthorizationProps {
     children?: React.ReactNode,
@@ -16,6 +15,7 @@ function Input({name, placeholder, hint}: Record<string, string>) {
 
     return (
     <>
+    <h1 className="input-name"> { getLocalize("authorization/"+name)} </h1>
             <input type="text" 
                 name={name}
                 placeholder={placeholder + newHint}
@@ -47,9 +47,10 @@ export default function Authorization({children, state}: IAuthorizationProps) {
     }
 
     const headerTextStyle = (!form ? 
-    { textAlign: "center" } : {
-        textAlign: "left",
-        marginLeft: "20px"
+    { textAlign: "left", marginLeft: "20px" } : {
+        
+        fontSize: "2rem",
+        fontWeight: "bold"
     }) as CSSProperties;
 
     let headerTextLocalize = getLocalize("authorization/optionalRequest");
@@ -78,6 +79,14 @@ export default function Authorization({children, state}: IAuthorizationProps) {
           <Form action="home">
             <Input name="login" placeholder={getLocalize("authorization/placeholder/login") } hint={"" + Math.floor(Math.random() * 256)}/>
             <Input name="password" placeholder={`${getLocalize("authorization/placeholder/password")}`} hint={" " + genPassword()} className='form-border'/>
+            <div></div>
+            <button className='button' style={{
+                fontSize: "1.4rem",
+                fontWeight: "normal",
+                width: "170px",
+                height: "80px",
+                borderRadius: "5px"
+            }}> <h1> {getLocalize("send")} </h1> </button>
           </Form>
         </>
     );
